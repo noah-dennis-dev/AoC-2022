@@ -1,3 +1,6 @@
+// Part 1: Time - 04:31, Rank - 2293
+// Part 2: Time - 07:39, Rank - 2647 
+
 const fs = require('fs');
 const lines = fs.readFileSync('./input.txt', 'utf8').split('\n\n');
 
