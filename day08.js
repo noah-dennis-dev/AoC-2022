@@ -71,10 +71,8 @@ function checkSide(coord, change, origin) {
     let newCoord = { x: coord.x, y: coord.y };
     newCoord.x += change.x;
     newCoord.y += change.y;
-
     let newC = grid.filter(el => el.x === newCoord.x && el.y === newCoord.y)[0];
     let oldC = grid.filter(el => el.x === coord.x && el.y === coord.y)[0];
-
     if (newC === undefined || oldC === undefined) {
         return 'side';
     }
