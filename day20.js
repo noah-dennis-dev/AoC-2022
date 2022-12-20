@@ -1,9 +1,8 @@
 const fs = require('fs');
 let items = fs.readFileSync('./input.txt', 'utf8').split('\n').map(Number);
 
-const nums = items.map(x => parseInt(x));
 const key = 811589153;
-const list = nums.map((val, i) => ({ val: val * key, i }));
+const list = items.map((val, i) => ({ val: val * key, i }));
 
 
 for (let x = 0; x < list.length * 10; x++) {
